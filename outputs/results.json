@@ -1,0 +1,164 @@
+[
+  {
+    "id": "Q1",
+    "question": "I have 72% attendance this semester. How many attendance marks will I receive, and am I eligible to appear for the final examination?",
+    "answer": "A student with 72% attendance receives 4 marks in the attendance evaluation tier. \n\nBecause 72% is below the mandatory 75% eligibility threshold, you are strictly debarred (not eligible) from appearing in the Final Exam for that subject unless condoned via an approved medical exemption buffer (up to 15%).",
+    "sources": [
+      "p7_c1",
+      "p7_c2"
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "p7_c2",
+        "page": 7,
+        "distance": 0.3258
+      },
+      {
+        "chunk_id": "p7_c1",
+        "page": 7,
+        "distance": 0.3482
+      },
+      {
+        "chunk_id": "p18_c1",
+        "page": 18,
+        "distance": 0.5245
+      },
+      {
+        "chunk_id": "p24_c2",
+        "page": 24,
+        "distance": 0.5461
+      },
+      {
+        "chunk_id": "p38_c1",
+        "page": 38,
+        "distance": 0.5986
+      }
+    ]
+  },
+  {
+    "id": "Q2",
+    "question": "Within how many days after recovery must a student submit supporting documents for Medical Leave? What happens if the documents are submitted after this period?",
+    "answer": "A student must submit all supporting documents for Medical Leave to the Campus Manager within 7 days of recovery (counted from the last day of illness or treatment).\n\nIf submitted after the 7-day window, requests will not be accepted under any circumstances. The absence will be treated as a regular unauthorized absence and will count against the student’s attendance percentage with zero relaxation granted, even if the illness was genuine.",
+    "sources": [
+      "p24_c1"
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "p24_c1",
+        "page": 24,
+        "distance": 0.3444
+      },
+      {
+        "chunk_id": "p24_c2",
+        "page": 24,
+        "distance": 0.5698
+      },
+      {
+        "chunk_id": "p35_c2",
+        "page": 35,
+        "distance": 0.6124
+      },
+      {
+        "chunk_id": "p15_c2",
+        "page": 15,
+        "distance": 0.6137
+      },
+      {
+        "chunk_id": "p10_c2",
+        "page": 10,
+        "distance": 0.6157
+      }
+    ]
+  },
+  {
+    "id": "Q3",
+    "question": "What is the monthly subscription fee for using the campus swimming pool and indoor squash court?",
+    "answer": "[not found]",
+    "sources": [],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "p18_c1",
+        "page": 18,
+        "distance": 0.6388
+      },
+      {
+        "chunk_id": "p7_c1",
+        "page": 7,
+        "distance": 0.7335
+      },
+      {
+        "chunk_id": "p38_c1",
+        "page": 38,
+        "distance": 0.74
+      }
+    ]
+  },
+  {
+    "id": "Q4",
+    "question": "What minimum percentage of batch-student support is required to propose a new student club, and which authority reviews the proposal first?",
+    "answer": "To propose a new student club, verifiable support from at least 40% of the total batch students is required. The proposal must be submitted to the designated Faculty Coordinator for initial review and feasibility approval.",
+    "sources": [
+      "p38_c1"
+    ],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "p38_c1",
+        "page": 38,
+        "distance": 0.4179
+      },
+      {
+        "chunk_id": "p30_c2",
+        "page": 30,
+        "distance": 0.5788
+      },
+      {
+        "chunk_id": "p50_c2",
+        "page": 50,
+        "distance": 0.5797
+      },
+      {
+        "chunk_id": "p35_c2",
+        "page": 35,
+        "distance": 0.5809
+      },
+      {
+        "chunk_id": "p15_c2",
+        "page": 15,
+        "distance": 0.5837
+      }
+    ]
+  },
+  {
+    "id": "Q5",
+    "question": "What is the default WPA2 password for the Mirai_Student_5G campus Wi-Fi network?",
+    "answer": "[not found]",
+    "sources": [],
+    "retrieved_chunks": [
+      {
+        "chunk_id": "p38_c1",
+        "page": 38,
+        "distance": 0.5852
+      },
+      {
+        "chunk_id": "p18_c2",
+        "page": 18,
+        "distance": 0.5938
+      },
+      {
+        "chunk_id": "p45_c2",
+        "page": 45,
+        "distance": 0.5946
+      },
+      {
+        "chunk_id": "p38_c2",
+        "page": 38,
+        "distance": 0.6239
+      },
+      {
+        "chunk_id": "p17_c1",
+        "page": 17,
+        "distance": 0.6279
+      }
+    ]
+  }
+]
