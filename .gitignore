@@ -1,0 +1,18 @@
+# Python virtual environments & bytecode
+.venv/
+venv/
+ENV/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ChromaDB persistence directory
+chroma_db/
+test_chroma/
+
+# Environment secrets
+.env
+
+# OS artifacts
+.DS_Store
+Thumbs.db
