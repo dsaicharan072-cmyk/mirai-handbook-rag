@@ -96,10 +96,10 @@ def call_gemini_with_retry(prompt: str, max_retries: int = 3) -> str:
     """Calls Gemini API with exponential backoff on transient errors."""
     client = get_gemini_client()
 
-    models_to_try = [GEMINI_MODEL]
-    # If the user specified gemini-2.0-flash, automatically fallback to gemini-3.8-flash if retired
-    if GEMINI_MODEL not in ["gemini-3.8-flash", "gemini-2.5-flash"]:
-        models_to_try.append("gemini-3.8-flash")
+    # Models prioritized for speed and quota resilience
+    models_to_try = [GEMINI_MODEL, "gemini-3.5-flash-lite", "gemini-3.1-flash-lite"]
+    # De-duplicate while preserving order
+    models_to_try = list(dict.fromkeys(models_to_try))
 
     last_error = None
     for model_name in models_to_try:
@@ -118,10 +118,10 @@ def call_gemini_with_retry(prompt: str, max_retries: int = 3) -> str:
                 return "[not found]"
             except APIError as e:
                 last_error = e
-                # If model is deprecated or not found (404), try alternative model immediately
-                if "404" in str(e) or "NOT_FOUND" in str(e):
+                # If model is deprecated (404) or quota exceeded (429) or high demand (503), switch immediately to next model
+                err_str = str(e)
+                if any(code in err_str for code in ["404", "NOT_FOUND", "429", "RESOURCE_EXHAUSTED", "503", "UNAVAILABLE"]):
                     break
-                # Transient error: backoff and retry
                 time.sleep(backoff)
                 backoff *= 2
             except Exception as e:
