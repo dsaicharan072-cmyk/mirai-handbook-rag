@@ -95,11 +95,14 @@ mirai-handbook-rag/
 │   ├── config.py                                  # Paths, thresholds & env variables
 │   ├── ingest.py                                  # Page-aware chunker, embedder & ChromaDB loader
 │   └── rag.py                                     # Retrieval + Gemini answer() function
+├── chat.py                                        # Interactive Terminal Chatbot CLI
+├── app.py                                         # Streamlit Interactive Web Chatbot UI
 ├── run_tests.py                                   # Evaluates Q1-Q5 and produces outputs
 ├── outputs/
 │   └── results.json                               # Generated responses for Q1-Q5
 ├── docs/
-│   └── execution_output.png                       # Test run screenshot placeholder
+│   ├── execution_output.png                       # Test run screenshot
+│   └── execution_output1.png                      # Chatbot execution screenshot
 ├── requirements.txt
 ├── .env.example
 ├── .gitignore
@@ -147,10 +150,24 @@ To force a rebuild:
 python src/ingest.py --rebuild
 ```
 
-### Step 4: Run Assessment Tests
-Run the evaluation test suite for questions Q1 to Q5:
+### Step 4: Run Assessment Tests or Chatbots
+
+#### A. Run Evaluation Test Suite (Q1 to Q5)
+Run the automated test runner:
 ```bash
 python run_tests.py
+```
+
+#### B. Run Interactive Terminal Chatbot
+To chat dynamically with the Policy Advisor in real time:
+```bash
+python chat.py
+```
+
+#### C. Run Streamlit Web UI Chatbot
+To launch the interactive web interface with chat history, suggestions, and source inspections:
+```bash
+streamlit run app.py
 ```
 
 ---
